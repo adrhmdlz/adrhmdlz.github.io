@@ -55,3 +55,29 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .name {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .pesan {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 144px;
+    }
+
+    .pesan2 {
+        margin-top: 50px;
+        width: 489px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
