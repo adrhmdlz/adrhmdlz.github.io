@@ -4,26 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrhmdlz - Portfolio</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <title>Adrhmdlz - Web Portfolio</title>
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="./assets/style/app.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+
 </head>
 <body>
-    
-    <div class="name">Adrhmdlz</div>
-    <div class="parent">
-        <div class="child">
-            <div class="pesan">Work in progress</div>
-            <div class="pesan2">Sorry for the inconvenience, this website is currently under construction. Please come back another time.</div>
 
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="nav">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <a href="./">Adrhmdlz</a>
+                </div>
+
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="#">
+                                <button class="btn">Resume</button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Hamburger menu -->
+                <div class="hamburger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </div>
+            
+            <section id="hero">
+                <div class="hero-left">
+                    <h3 class="pre-title">My name is</h3>
+                    <h1 class="hero-name">Adrian <span>Ahmad</span></h1>
+                    <p>
+                        An fresh graduate and young tech enthusiast from Jakarta, Indonesia. Curently focusing on web developing. Also working in some Python/C++ project.
+                    </p>
+                </div>
+                <div class="hero-right">
+                    <img src="./assets/img/hero.svg" alt="Hero">
+                </div>
+            </section>
         </div>
-    </div>
-    <div class="icon">
-        <div class="icon2">
-            <a href="https://www.instagram.com/adrhmdlz"><img src="/assets/instagram.svg" height="32px"></a>
-            <a href="https://www.github.com/adrhmdlz"><img src="/assets/github.svg" height="32px"></a>
-            <a href="https://www.linkedin.com/in/adrhmdlz"><img src="/assets/linkedin.svg" height="32px"></a>
-        </div>
-    </div>
-    
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Section services -->
+        <section id="services">
+            <div class="services services-container">
+                <h3 class="pre-title">Services</h3>
+                <h1 class="section-title services-title">Specialized In</h1>
+
+                <div class="grid-3">
+                    <!-- Service 1 -->
+                    <div class="service">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm0-2h10.5v-3.5H4V18Zm12.5 0H20V9h-3.5v9ZM4 12.5h10.5V9H4v3.5Z"/></svg>
+                        </div>
+                        <h4>Web Developing</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam expedita voluptates repellat ea? Cum laborum qui possimus assumenda quod minus sapiente necessitatibus harum magni!
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M9.5 14.5h4a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm0 0H4m2.5-3v3m2-9h6m-4.5 6h3m-11.5-8h7v8h-7a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1Z"/></svg>
+                        </div>
+                        <h4>Computer Maintenance</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam expedita voluptates repellat ea? Cum laborum qui possimus assumenda quod minus sapiente necessitatibus harum magni!
+                        </p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect width="7" height="5" x="3" y="2" rx=".6"/><rect width="7" height="5" x="8.5" y="17" rx=".6"/><rect width="7" height="5" x="14" y="2" rx=".6"/><path d="M6.5 7v3.5a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V7M12 12.5V17"/></g></svg>
+                        </div>
+                        <h4>Networking</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam expedita voluptates repellat ea? Cum laborum qui possimus assumenda quod minus sapiente necessitatibus harum magni!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section portfolio -->
+        <section id="portfolio"></section>
+
+        <!-- Section skill -->
+        <section id="skill"></section>
+
+        <!-- Section contact -->
+        <section id="contact"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <!-- JS connect -->
+    <script type="text/javascript" src="./script/app.js"></script>
+
 </body>
 </html>
