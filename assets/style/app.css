@@ -4,6 +4,7 @@
     border: 1px solid red;
 } */
 
+/* Variables - start */
 :root {
     --primaryText: #272727;
     --secondaryText: #525252;
@@ -22,6 +23,7 @@
 
     --borderRadius: 0.7rem;
 }
+/* Variables - end */
 
 /* Setup - start */
 *, *::before, *::after {
@@ -48,68 +50,22 @@ a {
 }
 /* Setup - end */
 
-/* Header - start */
-.header-container {
+/* Container utama - start */
+.main-container {
     width: 1100px;
     margin: 0 auto;
 }
-.header-container .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
-}
-.header-container .nav ul {
-    list-style: none;
-    display: flex;
+/* Container utama - end */
+
+/* Layout - start*/
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
 }
-.header-container .nav .nav-logo {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-.header-container .nav .nav-logo a {
-    color: var(--primaryText);
-}
-nav ul li {
-    display: flex;
-    align-items: center;
-}
-nav ul li a {
-    color: var(--primaryText);
-}
-.btn {
-    padding: 1rem 1.5rem;
-    background-color: var(--primaryBackground);
-    border: 1.5px solid var(--border);
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-.btn:hover {
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-}
-.hamburger {
-    display: none;
-    z-index: 999;
-    position: fixed;
-    top: 33px;
-    right: 35px;
-}
-.hamburger div {
-    width: 25px;
-    height: 2px;
-    background-color: var(--fourthBackground);
-    margin: 7px;
-    transition: all 0.2s;
-    z-index: 999;
-}
-#hero {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
+/* Layout - end */
+
+/* Title - start*/
 .pre-title {
     text-transform: uppercase;
     letter-spacing: .5rem;
@@ -130,6 +86,75 @@ nav ul li a {
     left: 0;
     top: 50%;
 }
+/* Title - end*/
+
+/* Header - start */
+/* -- Navbar - start */
+.main-container .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.main-container .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+/* --- Logo - start */
+.main-container .nav .nav-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.main-container .nav .nav-logo a {
+    color: var(--primaryText);
+}
+/* --- Logo - end */
+/* --- Navigation - start */
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    color: var(--primaryText);
+}
+.btn {
+    padding: 1rem 1.5rem;
+    background-color: var(--primaryBackground);
+    border: 1.5px solid var(--border);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+/* --- Navigation - end */
+/* --- Hamburger menu - start */
+.hamburger {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+.hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--fourthBackground);
+    margin: 7px;
+    transition: all 0.2s;
+    z-index: 999;
+}
+/* --- Hamburger menu - end */
+/* -- Navbar - end */
+/* -- Hero - start */
+#hero {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
 .hero-name {
     font-size: 3rem;
     font-weight: 700;
@@ -145,13 +170,11 @@ nav ul li a {
 .hero-right img {
     width: 80%;
 }
+/* -- Hero - end */
 /* Header - end */
 
 /* Main - start */
-.services-container {
-    width: 1100px;
-    margin: 0 auto;
-}
+/* -- Services - start */
 #services {
     background-color: var(--secondaryBackground);
     padding: var(--sectionPadding);
@@ -184,13 +207,55 @@ nav ul li a {
     padding: 1rem 1.3rem;
     border-radius: 0.5rem;
 }
-.service-con svg {
+.service-icon svg {
     fill: var(--primaryIcon);
 }
-/* Layout */
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
+/* -- Services - end */
+/* -- Portfolios - start */
+#portfolios {
+    padding: var(--sectionPadding);
 }
+.portfolio {
+    border-radius: var(--borderRadius);
+    overflow: hidden;
+}
+.portfolio-cover {
+    height: 250px;
+}
+.portfolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-info {
+    padding: 2rem 1.5rem;
+}
+.portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.portfolio-title a svg {
+    transition: .2s ease-in-out;
+}
+.portfolio-title a svg:hover {
+    fill: var(--primaryIcon);
+}
+.portfolio h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.portfolio-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.portfolio-tags div {
+    font-size: .9rem;
+    border: 1px solid var(--border);
+    padding: .4rem 1rem;
+    color: var(--secondaryText);
+}
+/* -- Portfolios - end */
 /* Main - end */
