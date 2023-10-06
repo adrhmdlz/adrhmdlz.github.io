@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #313131;
+}
+
+.container {
+    margin: auto;
+    width: 940px;
+    height: 625px;
+    /* background-color: #000; */
+    position: relative;
+}
+
+.header .name a {
+    position: absolute;
+    font-weight: bold;
+    width: 148px;
+    height: 29px;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 113px;
+    padding-top: 30px;
+    float: left;
+    z-index: 1;
+}
+
+.header .name a {
+    text-decoration: none;
+    color: #313131;
+}
+
+.header li {
+    display: inline-block;
+    padding-right: 75px;
+    list-style-type: none;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: #313131;
+    font-size: 16px;
+    position: relative;
+}
+
+.header .nav a:after {
+    content: "";
+    position: absolute;
+    background-color: #00D1FF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header .nav a:hover:after { width: 100%; }
+
+.nav { margin-left: 240px; }
+
+.invite a {
+    text-decoration: none;
+    color: #00D1FF;
+    font-size: 16px;
+    position: relative;
+    border: 3px solid #00D1FF;
+    border-radius: 50px;
+    padding: 12px 42px;
+    box-sizing: border-box;
+}
+
+.invite a:hover {
+    color: #FFFFFF;
+    background-color: #00D1FF;
+}
+
+.invite { 
+    margin-left: 839px; /*956*/
+    margin-top: -15px;
+}
+
+.hero {
+    background-image: url(img/img-1.png);
+    position: absolute;
+    width: 300px;
+    height: 388px;
+    left: 796px;
+    top: 146px;
+    border-radius: 30px;
+}
+
+.content h1 {
+    /* position: relative; */
+    width: 435px;
+    height: 147px;
+    /* left: 210px; */
+    top: 179px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.content h2 {
+    /* position: relative; */
+    width: 530px;
+    height: 132px;
+    /* left: 213px; */
+    top: 320px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.gts a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #00D1FF;
+    font-size: 16px;
+    left: 213px;
+    top: 461px;
+    position: absolute;
+    border: 3px solid #00D1FF;
+    border-radius: 50px;
+    padding: 12px 42px;
+    box-sizing: border-box;
+}
+
+.gts a:hover {
+    background-color: #FFFFFF;
+    color: #313131;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+ 
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
