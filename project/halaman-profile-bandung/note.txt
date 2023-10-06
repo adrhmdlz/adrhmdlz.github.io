@@ -1,0 +1,29 @@
+Shorthand font-styling
+    - selector { font: style weight variant size font-family; }
+
+Shorthand Box Model (Border)
+    - div { border: width type color; }
+
+Box Shadow
+Berikut adalah penjelasan tiap-tiap nilai dari propertinya.
+    - Nilai pertama: menunjukkan seberapa jauh ke kiri atau kanan (horizontal) bayangan harus ditampakkan.
+    - Nilai kedua: menunjukkan jarak ke atas atau ke bawah (vertical) bayangan harus ditampakkan. 
+    - Nilai ketiga (opsional): menentukan tingkat keburaman yang harus diterapkan pada bayangan.
+    - Nilai keempat (opsional): tingkat sebaran (spread) bayangan. Semakin besar nilai yang ditentukan, bayangan yang tampak akan semakin luas.
+    - Nilai kelima: menentukan warna yang digunakan pada bayangan.
+
+Shorthand Box Model (Border Radius)
+    - div { border-radius: kanan atas kiri bawah; }
+
+Flexbox
+    - display: flex;
+    - flex-direction: row | row-reverse | column | column-reverse;
+    - flex-wrap: nowrap | wrap | wrap-reverse;
+    - justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+    - align-items: stretch | flex-start | flex-end | center | baseline;
+    - align-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+    - gap
+        -- gap: 1rem; /*diterapkan secara vertikal dan horizontal dengan nilai yang sama*/
+        -- gap: 1rem 2rem; /*diterapkan secara vertikal dan horizontal*/
+        -- row-gap: 1rem; /*diterapkan secara horizontal*/
+        -- column-gap: 1rem; /*diterapkan secara vertikal*/
