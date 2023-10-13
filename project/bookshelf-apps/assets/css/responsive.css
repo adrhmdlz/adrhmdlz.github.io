@@ -42,7 +42,11 @@
         font-size: 12px;
     }
     .modal-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         margin: 30vh auto;
+        width: 50%;
     }
 }
 
@@ -70,7 +74,7 @@
     }
     .modal-content {
         width: 50%;
-        height: 20%;
+        height: 25%;
         margin: 40vh auto;
     }
 }
@@ -83,7 +87,11 @@
         font-size: 12px;
     }
     .modal-content {
-        height: 25%;
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+        justify-content: center;
+        padding: 5px;
     }
     .modal-content i {
         font-size: 45px;
@@ -111,6 +119,7 @@
         padding: 5px;
     }
     .modal-content {
-        height: 30%;
+        width: 50%;
+        height: 20%;
     }
 }
