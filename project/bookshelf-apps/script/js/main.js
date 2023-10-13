@@ -4,14 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const STORAGE_KEY = 'BOOKSHELF_APPS';
     const RENDER_EVENT = 'render-book';
     const inputBook = document.getElementById('inputBook');
+    const searchBook = document.getElementById('searchBook');
     const confirmationModal = document.getElementById('confirmationModal');
     const confirmDeleteButton = document.getElementById('confirmDelete');
     const cancelDeleteButton = document.getElementById('cancelDelete');
-
-    inputBook.addEventListener('submit', function(event) { 
-        event.preventDefault();
-        addBook();
-    });
+    const resetButton = document.querySelector('.reset-button');
 
     function addBook() {
         const bookTitle = document.getElementById('inputBookTitle').value;
@@ -20,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const bookStatus = document.getElementById('inputBookIsComplete').checked;
 
         const generateID = generateId();
-        const bookObject = generateBookObject(generateID, bookTitle, bookAuthor, bookYear, bookStatus);
+        const bookObject = generateBookObject(generateID, bookTitle, bookAuthor, Number(bookYear), bookStatus);
         books.push(bookObject);
 
         document.dispatchEvent(new Event(RENDER_EVENT));
@@ -52,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
         bookTextTitle.innerText = bookObject.title;
         bookTextAuthor.innerText = bookObject.author;
         bookTextYear.innerText = bookObject.year;
+
+        bookTextTitle.classList.add('book-title');
 
         bookDesc.classList.add('book-desc');
         bookDesc.append(bookTextTitle, bookTextAuthor, bookTextYear);
@@ -194,6 +193,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.dispatchEvent(new Event(RENDER_EVENT));
     }
+
+    function searchBookItem() {
+        const searchInput = document.getElementById('searchBookTitle').value.toLowerCase();
+        const bookItems = document.getElementsByClassName('book-item');
+
+        for (let i = 0; i < bookItems.length; i++) {
+            const itemTitle = bookItems[i].querySelector('.book-title');
+            if (itemTitle.textContent.toLowerCase().includes(searchInput)) {
+                bookItems[i].classList.remove('hidden');
+            } else {
+                bookItems[i].classList.add('hidden');
+            }
+        }
+    }
+
+    inputBook.addEventListener('submit', function(event) { 
+        event.preventDefault();
+        addBook();
+    });
+
+    searchBook.addEventListener('submit', function(event) {
+        event.preventDefault();
+        searchBookItem();
+    });
+
+    resetButton.addEventListener('click', function() {
+        document.getElementById('searchBookTitle').value = "";
+        searchBookItem();
+    });
 
     confirmDeleteButton.addEventListener('click', function() {
         removeBookFromList(deletingBookId);

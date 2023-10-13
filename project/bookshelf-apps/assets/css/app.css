@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@100;300;400;700&display=swap');
 
-/* * {
-    border: 1px solid red;
-} */
-
 /* Setup */
 *, *::before, *::after {
     padding: 0;
@@ -36,16 +32,29 @@ footer {
 }
 .submit-button {
     padding: 10px;
-    background: #0b0b0b;
-    color: #f0f0f0;
+    background: #f0f0f0;
+    color: #0b0b0b;
     border: 1px solid #0b0b0b;
     border-radius: 5px;
     text-shadow: none;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .submit-button:hover {
+    background: #0b0b0b;
+    color: #f0f0f0;
+}
+.reset-button {
+    padding: 10px;
     background: #f0f0f0;
     color: #0b0b0b;
+    border: 1px solid #0b0b0b;
+    border-radius: 5px;
+    text-shadow: none;
+    transition: 0.2s ease-in-out;
+}
+.reset-button:hover {
+    background: #0b0b0b;
+    color: #f0f0f0;
 }
 .input-user {
     width: 100%;
@@ -200,4 +209,7 @@ main .site-container {
 }
 .confirmation-modal-button button {
     width: 40%;
+}
+.hidden {
+    display: none;
 }
