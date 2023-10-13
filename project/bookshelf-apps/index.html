@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0e362ebcfd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-container">
+            <h2><a href="./index.html">Bookshelf Apps</a></h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="site-container">
+            <div class="row-section">
+                <section class="input-section">
+                    <h3>Masukkan Buku Baru</h3>
+                    <form id="inputBook">
+                        <div class="input input-spacing">
+                            <input type="text" class="input-user" id="inputBookTitle" placeholder="Judul" required>
+                        </div>
+                        <div class="input-item input-spacing">
+                            <div class="input">
+                                <input type="text" class="input-user" id="inputBookAuthor" placeholder="Penulis" required>
+                            </div>
+                            <div class="input">
+                                <input type="number" class="input-user" id="inputBookYear" placeholder="Tahun" required>
+                            </div>
+                        </div>
+                        <div class="input-inline input-spacing">
+                            <input type="checkbox" id="inputBookIsComplete"> Selesai dibaca
+                        </div>
+                        <div class="input-submit">
+                            <div><!-- Div kosong --></div>
+                            <button type="submit" id="bookSubmit" class="submit-button">Simpan</button>
+                        </div>
+                    </form>
+                </section>
+    
+                <section class="search-section">
+                    <h3>Cari Buku</h3>
+                    <form id="searchBook">
+                        <input type="text" class="input-user input-spacing" id="searchBookTitle" placeholder="Cari">
+                        <div class="input-submit">
+                            <div><!-- Div kosong --></div>
+                            <button type="submit" id="searchSubmit" class="submit-button">Cari</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div class="row-section">
+                <section class="book-shelf">
+                    <h3>Belum selesai dibaca</h3>
+
+                    <div id="incompleteBookshelfList" class="book-list">
+                        
+                    </div>
+                </section>
+                
+                <section class="book-shelf">
+                    <h3>Selesai dibaca</h3>
+
+                    <div id="completeBookshelfList" class="book-list">
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal" id="confirmationModal">
+            <div class="modal-content">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>Anda yakin ingin menghapus data ini?</p>
+                <div class="confirmation-modal-button">
+                    <button id="confirmDelete">Ya</button>
+                    <button id="cancelDelete">Tidak</button>     
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Adrhmdlz All rights reserved.</p>
+    </footer>
+
+    <script src="./script/js/main.js"></script>
+    
+</body>
+</html>

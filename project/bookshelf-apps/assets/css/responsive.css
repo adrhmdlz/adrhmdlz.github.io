@@ -1,0 +1,113 @@
+@media screen and (max-width: 1025px) {
+    .green {
+        width: 35px;
+        height: 35px;
+    }
+    .red {
+        width: 35px;
+        height: 35px;
+    }
+    .yellow {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .green {
+        width: 30px;
+        height: 30px;
+    }
+    .red {
+        width: 30px;
+        height: 30px;
+    }
+    .yellow {
+        width: 30px;
+        height: 30px;
+    }
+    .green i {
+        font-size: 14px;
+    }
+    .red i {
+        font-size: 14px;
+    }
+    .yellow i {
+        font-size: 14px;
+    }
+    .book-desc h4 {
+        font-size: 14px;
+    }
+    .book-desc p {
+        font-size: 12px;
+    }
+    .modal-content {
+        margin: 30vh auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .row-section {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 auto 1rem auto;
+    }
+    .input-section {
+        width: 100%;
+    }
+    .input-item {
+        flex-direction: column;
+    }
+    .input-item .input {
+        width: 100%;
+    }
+    .search-section {
+        width: 100%;
+    }
+    .book-shelf {
+        width: 100%;
+        margin-top: 0;
+    }
+    .modal-content {
+        width: 50%;
+        height: 20%;
+        margin: 40vh auto;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    h4 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .modal-content {
+        height: 25%;
+    }
+    .modal-content i {
+        font-size: 45px;
+    }
+    .modal-content p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+    }
+    main .site-container {
+        margin: 5px auto;
+        padding: 5px;
+    }
+}
