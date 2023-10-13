@@ -110,4 +110,7 @@
         margin: 5px auto;
         padding: 5px;
     }
+    .modal-content {
+        height: 30%;
+    }
 }
