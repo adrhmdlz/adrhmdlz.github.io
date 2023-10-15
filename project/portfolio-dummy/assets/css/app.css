@@ -45,6 +45,46 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.card-item-img {
+    position: relative;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .3s;
+    font-size: 50px;
+}
+.card-overlay .card-overlay-text {
+    margin: 0 auto;
+    text-align: center;
+    color: #999;
+    display: none;
+}
+.card-overlay:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+}
+.card-overlay:hover .card-overlay-text {
+    flex-direction: column;
+    display: block;
+}
+.card-overlay:hover i {
+    color: white;
+}
+.card-overlay:hover i:hover {
+    color: #333;
 }
 
 .card {
@@ -52,6 +92,7 @@ form {
     border: 1px solid #999;
     border-radius: 5px;
     overflow: hidden;
+    min-height: 350px;
 }
 .card img {
     width: 100%;
