@@ -2,11 +2,6 @@
     border: 1px solid red;
 } */
 
-.jumbotron img {
-    width: 200px;
-    border: 5px solid #666;
-}
-
 body {
     margin-top: 30px;
 }
@@ -30,11 +25,63 @@ form {
     margin-bottom: 20px;
 }
 
+.jumbotron {
+    height: 400px;
+    /* background-image: url(../img/header-img1.png); */
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/header-img1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -100px;
+    color: #eaeaea;
+    overflow: hidden;
+}
+.jumbotron img {
+    width: 200px;
+    border: 5px solid #eaeaea;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+.jumbotron h1, .jumbotron p {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
 .about {
     min-height: 650px;
 }
+.about-left {
+    opacity: 0;
+    transform: translate(100px, 0);
+    transition: .5s;
+}
+.about-right {
+    opacity: 0;
+    transform: translate(-100px, 0);
+    transition: .5s;
+}
+.about-left.show, .about-right.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .portfolio, .contact {
     background-color: #eee;
+}
+.portfolio .card {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: .5s;
+}
+.portfolio .card.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.certification .card {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: .5s;
+}
+.certification .card.show {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .edu-exp hr {
