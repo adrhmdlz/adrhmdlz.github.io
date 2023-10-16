@@ -26,7 +26,7 @@ Different from others, this project is one of the final assignments or final pro
 On progress project:
 - <b>KmGPP (Python)</b> [[source code](https://github.com/adrhmdlz/km-gpp)]<br>
 This project is one of the projects I worked on outside of web development. It is a basic project that I use to measure my knowledge and skills in the Python language. Currently on hiatus, because I am more focused on web development.
-- <b>ITNSA (Clien Server Environments)</b> [[source code](https://github.com/adrhmdlz/itnsa-lks-kotang)]<br>
+- <b>ITNSA (Client Server Environments)</b> [[source code](https://github.com/adrhmdlz/itnsa-lks-kotang)]<br>
 This is one of my jobs outside of programming, as I mentioned earlier that I also work on some basic Linux configuration projects. And here is one of the results of my work.
 - <b>Seller Dashboard</b> [soon]<br>
 (soon)
