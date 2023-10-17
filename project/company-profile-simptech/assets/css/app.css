@@ -1,0 +1,30 @@
+.slider img {
+    filter: brightness(45%);
+}
+.parallax img {
+    filter: brightness(50%);
+}
+.partners img {
+    max-width: 120px;
+    border-radius: 10px;
+}
+.parallax-container {
+    max-height: 250px;
+}
+
+.services {
+    padding: 20px 0;
+}
+.services i {
+    font-size: 50px;
+}
+
+footer {
+    padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .parallax-container {
+        max-height: 20%;
+    }
+}
