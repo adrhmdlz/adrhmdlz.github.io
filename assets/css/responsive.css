@@ -2,16 +2,6 @@
     .edu-container-item, .exp-container-item {
         width: 60%;
     }
-    .card-item-header {
-        display: flex;
-        text-align: center;
-    }
-    .card-item-header h4 {
-        width: 100%;
-    }
-    .card-item-tags {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 390px) {
