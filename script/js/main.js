@@ -36,18 +36,18 @@ $(window).scroll(function() {
 
     // Portfolio
     if(windowScroll > $('.portfolio').offset().top - 250) {
-        $('.portfolio .card').each(function(i) {
+        $('.portfolio .thumbnail').each(function(i) {
             setTimeout(function() {
-                $('.portfolio .card').eq(i).addClass('show');
+                $('.portfolio .thumbnail').eq(i).addClass('show');
             }, 500 * (i+1));
         });
     }
 
     // Certificate
     if(windowScroll > $('.certification').offset().top - 250) {
-        $('.certification .card').each(function(i) {
+        $('.certification .thumbnail').each(function(i) {
             setTimeout(function() {
-                $('.certification .card').eq(i).addClass('show');
+                $('.certification .thumbnail').eq(i).addClass('show');
             }, 500 * (i+1));
         });
     }
