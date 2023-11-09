@@ -14,6 +14,10 @@ $('.page-scroll').on('click', function(event) {
 
 // Parallax
 // Ketika windows di load
+window.onload = function () {
+    // Semua aset telah dimuat
+    document.querySelector('.loading-overlay').style.display = 'none';
+}
 $(window).on('load', function() {
     $('.about-left').addClass('show');
     $('.about-right').addClass('show');
