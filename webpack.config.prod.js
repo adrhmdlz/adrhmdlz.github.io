@@ -17,10 +17,6 @@ module.exports = merge(baseConfig, {
                     },
                 ],
             },
-            {
-                test: /\.s?css$/,
-                use: ['css-loader', 'sass-loader'],
-            },
         ],
     },
 });
